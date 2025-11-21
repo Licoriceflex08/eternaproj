@@ -24,8 +24,6 @@ Live demo: https://eternaproj.vercel.app
 
 Eternaproj is a Next.js application written in TypeScript. It was bootstrapped with `create-next-app` and structured around the App Router. The intent of the repository is to provide a clean, production-friendly starting point for building UI-heavy web apps.
 
-> If you are the repository owner and want this README tailored more specifically (features list, screenshots, API integrations, environment variables), tell me what to include and I'll update it.
-
 ---
 
 ## Tech stack
