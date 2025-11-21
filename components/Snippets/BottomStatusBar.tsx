@@ -1,4 +1,3 @@
-// components/molecules/BottomStatusBar.tsx
 'use client';
 
 import React from 'react';

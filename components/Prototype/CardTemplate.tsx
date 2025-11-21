@@ -1,5 +1,3 @@
-// components/atoms/SkeletonCard.tsx
-
 export const SkeletonCard = () => (
   // The animation-pulse class provides the simple shimmer effect
   <div className="flex items-center justify-between p-3 border-b border-gray-700 bg-gray-800 animate-pulse">

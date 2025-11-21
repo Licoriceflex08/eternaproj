@@ -1,4 +1,3 @@
-// components/molecules/TokenCard.tsx
 'use client';
 
 import React from 'react';

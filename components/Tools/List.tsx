@@ -1,4 +1,3 @@
-// components/organisms/Column.tsx
 'use client';
 
 import React from 'react';

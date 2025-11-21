@@ -1,4 +1,3 @@
-// components/atoms/FormatCurrency.tsx
 import React from 'react';
 interface FormatCurrencyProps {
   value: number;
