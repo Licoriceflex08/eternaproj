@@ -50,6 +50,12 @@ const reducer = (state: AppState, action: Action): AppState => {
         mockDb: action.payload, 
         isLoading: false 
       };
+
+      case 'TOGGLE_SETTINGS_MODAL':
+      return {
+        ...state,
+        isSettingsModalOpen: action.payload
+      };
       
     case 'UPDATE_PRICE':
       /** * CRITICAL LOGIC: Updates a single token's price/marketCap in the central source of truth (mockDb).

@@ -1,4 +1,3 @@
-// components/organisms/ColumnFilterModal.tsx
 'use client';
 
 import React, { useState, useCallback } from 'react';

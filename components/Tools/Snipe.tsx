@@ -1,4 +1,3 @@
-// components/organisms/SnipeModal.tsx
 'use client';
 
 import React from 'react';

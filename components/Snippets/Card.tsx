@@ -171,17 +171,17 @@ export const TokenCard = React.memo(({ token, columnId }: TokenCardProps) => {
               </div>
 
               <div className="flex items-center gap-1">
-                <Flag size={14} className="text-purple-400" />
-                <span className="text-purple-400 font-semibold">{token.flagScore}</span>
+                <Flag size={14} className="text-red-400" />
+                <span className="text-red-400 font-semibold">{token.flagScore}</span>
               </div>
 
               {/* price + tx compact */}
-              <div className="flex items-center gap-1 font-mono font-bold text-sm text-green-400">
+              <div className="flex items-center gap-1 font-mono font-bold text-sm text-teal-400">
                 <Coins size={14} />
                 <span>{safePrice}</span>
               </div>
 
-              <div className="flex items-center gap-1 font-mono font-bold text-sm text-pink-400">
+              <div className="flex items-center gap-1 font-mono font-bold text-sm text-purple-400">
                 <X size={14} />
                 <span>TX {token.txnsToday}</span>
               </div>
@@ -233,13 +233,13 @@ export const TokenCard = React.memo(({ token, columnId }: TokenCardProps) => {
         {/* small pulsing indicators to match the screenshot arrangement */}
         <div className="ml-1 flex items-center gap-2">
           <div className="w-6 h-6 flex items-center justify-center">
-            {renderPulsingRingIcon('bg-red-500')}
+            {renderPulsingRingIcon('bg-orange-500')}
           </div>
 
           <ChevronRight size={16} className="text-zinc-600" />
 
           <div className="w-6 h-6 flex items-center justify-center">
-            {renderPulsingRingIcon('bg-yellow-400')}
+            {renderPulsingRingIcon('bg-emerald-400')}
           </div>
         </div>
       </div>
