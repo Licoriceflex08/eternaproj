@@ -366,7 +366,7 @@ export const MainNavbar = React.memo(() => {
           <Image src="//logotyp.us/file/solana.svg" height={28} width={28} alt='Solana' className="text-teal-400" />
           <span className="text-sm font-bold text-zinc-200">0</span>
           <span className="text-lg font-thin text-zinc-500">|</span>
-          <Image src="/cointokenn.png" height={28} width={28} alt='Solana' className="text-teal-400" />
+          <Image src="/cointoken.png" height={28} width={28} alt='Solana' className="text-teal-400" />
           <span className="text-sm font-bold text-zinc-200">0</span>
           <ChevronDown size={16} className="ml-1.5 text-zinc-400" />
         </button>
