@@ -1,4 +1,4 @@
-# Token-Modelling Website (Eterna)
+# Token Table Website (Eterna)
 > A modern Next.js + TypeScript starter/project — UI-focused web application built with the App Router.
 
 Live demo: https://eternaproj.vercel.app
