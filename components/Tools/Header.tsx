@@ -271,16 +271,16 @@ export const MainNavbar = React.memo(() => {
         <Image
           src="//logotyp.us/file/solana.svg"
           alt="Solana"
-          width={36}
-          height={36}
+          width={28}
+          height={28}
           className="object-contain"
         />
       ) : (
         <Image
           src="/bnb.jpeg"   // <-- Use your uploaded BNB asset
           alt="BNB"
-          width={36}
-          height={36}
+          width={28}
+          height={28}
           className="object-contain"
         />
       )}
