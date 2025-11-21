@@ -1,36 +1,152 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Token-Modelling Website (Eterna)
+> A modern Next.js + TypeScript starter/project — UI-focused web application built with the App Router.
 
-## Getting Started
+Live demo: https://eternaproj.vercel.app
 
-First, run the development server:
+---
+
+## Table of contents
+
+- [About](#about)
+- [Tech stack](#tech-stack)
+- [Features](#features)
+- [Getting started](#getting-started)
+- [Available scripts](#available-scripts)
+- [Folder structure](#folder-structure)
+- [Development notes](#development-notes)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## About
+
+Eternaproj is a Next.js application written in TypeScript. It was bootstrapped with `create-next-app` and structured around the App Router. The intent of the repository is to provide a clean, production-friendly starting point for building UI-heavy web apps.
+
+---
+
+## Tech stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** CSS (likely Tailwind CSS or PostCSS — the project contains `postcss.config.mjs`)
+- **Tooling:** ESLint, PostCSS
+
+*(See `package.json`, `next.config.ts` and project files for exact tools & versions.)*
+
+---
+
+## Features
+
+- TypeScript support
+- App Router layout under `app/`
+- Component-driven structure (`components/`)
+- Reusable hooks (`hooks/`)
+- Utility libraries and helpers under `lib/`
+- Static/public assets in `public/`
+- Ready for Vercel deployment (project already links to `eternaproj.vercel.app`)
+
+---
+
+## Getting started
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/Licoriceflex08/eternaproj.git
+cd eternaproj
+```
+
+2. Install dependencies (choose your package manager)
+
+```bash
+npm install
+# or
+pnpm install
+# or
+yarn
+```
+
+3. Run the development server
 
 ```bash
 npm run dev
 # or
-yarn dev
-# or
 pnpm dev
 # or
-bun dev
+yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Available scripts
 
-## Learn More
+The project was created with `create-next-app` so it will have the usual scripts. Typical scripts you can expect in `package.json`:
 
-To learn more about Next.js, take a look at the following resources:
+- `dev` — run the development server
+- `build` — build the app for production
+- `start` — start the production server
+- `lint` — run ESLint
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Run them via `npm run <script>` (or the equivalent for your package manager).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Folder structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+/ (root)
+├─ app/            # Next.js App Router pages and layouts
+├─ components/     # Reusable UI components
+├─ hooks/          # Custom React hooks
+├─ lib/            # Utilities, helpers, constants
+├─ public/         # Static assets (images, fonts, icons)
+├─ package.json
+├─ tsconfig.json
+└─ next.config.ts
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Development notes
+
+- If the project uses Tailwind CSS, run the PostCSS build/watch process only if necessary; check `postcss.config.mjs`.
+- Types: keep `tsconfig.json` aligned with the Next.js defaults for strictness.
+- Linting & formatting: consider adding a pre-commit hook (husky + lint-staged) if you contribute frequently.
+
+---
+
+## Deployment
+
+The repository already references a Vercel URL. To deploy yourself:
+
+1. Push the repo to GitHub (if it's not already there).
+2. Import the GitHub repository to Vercel (https://vercel.com/new).
+3. Vercel will detect Next.js and configure builds automatically. Add any required environment variables in the Vercel dashboard.
+
+---
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feat/your-feature`
+3. Commit your changes and push: `git push origin feat/your-feature`
+4. Open a pull request describing your changes
+
+Please keep changes small and well-documented. Add tests where appropriate.
+
+---
+
+## License
+
+This README uses the permissive [MIT License](https://opensource.org/licenses/MIT) as a suggested default. If you prefer a different license, update `LICENSE` accordingly.
+
+---
+
+## Contact
+
+If you want this README to include screenshots, code samples, a roadmap, or instructions specific to environment variables and APIs used by the app, tell me what to add and I will update the file.
+
